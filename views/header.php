@@ -1,29 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style> .logoHolder{float:left;} .logo{max-height:60px;} .homemenu{float:right; margin:20px 50px 50px 0px; padding: 10px 30px 30px 0px; background-size: 100%; background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0,#f7a71b),color-stop(100%,#d38600)); background-image: -moz-linear-gradient(#f7a71b,#d38600); background-image: -webkit-linear-gradient(#f7a71b,#d38600); background-image: linear-gradient(#f7a71b,#d38600); .menuitems{float:left; margin:0px 0px 0px 50px;} </style>
+<title>Cloudcrest Capital</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./w3.css">
+<link rel="stylesheet" href="./cloudcrest.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<div class="headerHolder">
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card-2 w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-blue w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-padding-large w3-white">
+      <img src="https://mfgqtc--c.na40.content.force.com/servlet/servlet.ImageServer?id=01546000000NZIF&oid=00D460000000MPU&lastMod=1495748705000" href=""> />
+    </a>
+    <a href="#services" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-blue">Services</a>
+    <a href="#clients" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-blue">Clients</a>
+    <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-blue">Team</a>
+    <a href="#company" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-blue">Company</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-blue">Contact</a>
+  </div>
 
-	<div class="logoHolder">
-		<img class="logo" src="https://mfgqtc--c.na40.content.force.com/servlet/servlet.ImageServer?id=01546000000NZIF&oid=00D460000000MPU&lastMod=1495748705000" href="">
-	</div>
-	
-	<div>
-		<ul class="homemenu">
-		  <li class="menuitems">Products</li>
-		  <a href="/parts.html"><li class="menuitems">Parts</li></a>
-		  <li class="menuitems">Service & Support</li>
-		  <li class="menuitems">Build a Quote</li>
-		</ul>  
-	</div>
-
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-text-blue w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#services" class="w3-bar-item w3-button w3-padding-large">Services</a>
+    <a href="#clients" class="w3-bar-item w3-button w3-padding-large">Clients</a>
+    <a href="#team" class="w3-bar-item w3-button w3-padding-large">Team</a>
+    <a href="#company" class="w3-bar-item w3-button w3-padding-large">Company</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+  </div>
 </div>
