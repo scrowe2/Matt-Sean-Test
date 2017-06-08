@@ -1,8 +1,8 @@
 <!-- Header -->
-<header class="w3-container w3-red w3-text-blue w3-center" style="padding:96px 16px">
+<header class="w3-container w3-red w3-text-black w3-center" style="padding:96px 16px">
   <h1 class="w3-jumbo">Cloudcrest Capital</h1>
   <p class="w3-xlarge">Big Service for Small Business</p>
-  <a href="#get-quote" class="w3-button w3-blue w3-padding-large w3-large w3-margin-top">Get a Quote</a>
+  <a href="#get-quote" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get a Quote</a>
 </header>
 
 <!-- First Grid -->
@@ -121,7 +121,7 @@
                 <td><input  id="00N6A000004HgDo" name="00N6A000004HgDo" size="20" type="number" class="w3-input w3-animate-input"/></td>
             </tr>
         </table>
-        <input class="w3-button w3-blue w3-center" type="submit" name="submit" />
+        <input class="w3-button w3-black w3-center" type="submit" name="submit" />
         </form>
     </div>
   </div>
@@ -151,7 +151,7 @@
     </div>
 
     <div class="w3-third w3-center w3-hide-small">
-      <i class="fa fa-handshake-o w3-padding-64 w3-text-blue w3-margin-right fa-big-image"></i>
+      <i class="fa fa-handshake-o w3-padding-64 w3-text-black w3-margin-right fa-big-image"></i>
     </div>
   </div>
 </div>
@@ -180,17 +180,17 @@
       <h1 id="contact">Contact Us</h1>
       <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
       <div class="w3-xlarge w3-center">
-        <i class="fa fa-facebook-official w3-text-blue w3-hover-text-red"></i>
-        <i class="fa fa-instagram w3-text-blue w3-hover-text-red"></i>
-        <i class="fa fa-snapchat w3-text-blue w3-hover-text-red"></i>
-        <i class="fa fa-pinterest-p w3-text-blue w3-hover-text-red"></i>
-        <i class="fa fa-twitter w3-text-blue w3-hover-text-red"></i>
-        <i class="fa fa-linkedin w3-text-blue w3-hover-text-red"></i>
+        <i class="fa fa-facebook-official w3-text-black w3-hover-text-red"></i>
+        <i class="fa fa-instagram w3-text-black w3-hover-text-red"></i>
+        <i class="fa fa-snapchat w3-text-black w3-hover-text-red"></i>
+        <i class="fa fa-pinterest-p w3-text-black w3-hover-text-red"></i>
+        <i class="fa fa-twitter w3-text-black w3-hover-text-red"></i>
+        <i class="fa fa-linkedin w3-text-black w3-hover-text-red"></i>
      </div>
     </div>
 
     <div class="w3-third w3-center w3-hide-small">
-      <i class="fa fa-phone w3-padding-64 w3-text-blue w3-margin-right fa-big-image"></i>
+      <i class="fa fa-phone w3-padding-64 w3-text-black w3-margin-right fa-big-image"></i>
     </div>
   </div>
 </div>
