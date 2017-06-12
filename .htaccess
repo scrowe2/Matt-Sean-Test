@@ -2,7 +2,7 @@ RewriteEngine On
 
 #When using the script within a subfolder, put this path here, like /mysubfolder/
 #If your app is in the root of your web folder, then pleae delete this line or comment it out like this line
-RewriteBase /mvc/
+#RewriteBase /mvc/
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
