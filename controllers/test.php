@@ -18,7 +18,7 @@ class test extends Controller{
     public function Index(){
         
         $this->view->renderHeader();
-        
+        $s = new SFDCConnector();
        
         $this->view->renderFooter();
     }
