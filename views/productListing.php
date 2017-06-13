@@ -1,4 +1,4 @@
-<table class="w3-table">
+<table class="w3-table-all">
 
 <?php
 foreach($context->result->records as $prod){
