@@ -19,7 +19,8 @@ class test extends Controller{
         
         //$this->view->renderHeader();
         //$this->view->render('index');
-        
+        echo $this->Salesforce->serverURL;
+        echo $this->Salesforce->sessionId;
         
         //$this->Salesforce->sessionId;
         //$this->view->renderFooter();
