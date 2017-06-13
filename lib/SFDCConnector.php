@@ -9,9 +9,10 @@ class SFDCConnector {
     
     public function __construct() {
         $this->soap = new SoapClient('lib/sfdc_partner_v40.wsdl');
+        $this->login();
     }
     
-    public function login($username, $password){
+    public function login(){
         $soap_data = new stdClass();
         $soap_data->username = SFDC_API_USER;
         $soap_data->password = SFDC_API_PASSWORD . SFDC_API_TOKEN;
