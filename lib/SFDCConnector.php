@@ -22,6 +22,9 @@ class SFDCConnector {
         catch(Exception $e){
             var_dump($this->soap->__getLastRequestHeaders());
             var_dump($this->soap->__getLastRequest());
+            
+            var_dump($this->soap->__getLastResponseHeaders());
+            var_dump($this->soap->__getLastResponse());
         }
         
     }
