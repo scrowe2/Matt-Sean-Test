@@ -17,12 +17,18 @@ class Controller {
         
     }
     
-    public function loadModel($modelName){
+    public function loadModel($modelName, $alias=null){
         
         $file = 'models/' . $modelName . '.php';
         if (file_exists($file)) {
             require 'models/' . $modelName . '.php';
-            $this->$modelName = new $modelName();
+            if($alias != null){
+                $this->$alias = new $modelName();
+            }
+            else{
+                $this->$modelName = new $modelName();
+            }
+            
         }   
     }
     public function Index(){
