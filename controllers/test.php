@@ -9,16 +9,18 @@ class test extends Controller{
      *
      * @var Salesforce 
      */
-    public $Salesforce;
+    
     public function __construct() {
         parent::__construct();
-        //$this->loadModel('Salesforce');
+        
     }
     
     public function Index(){
-        
+        $sfdc = new SFDCConnector();
+        $products = $sfdc->query("SELECT Name, Id, ProductCode, Description FROM Product2 LIMIT 30");
         $this->view->renderHeader();
-        $s = new SFDCConnector();
+        
+        
        
         $this->view->renderFooter();
     }
