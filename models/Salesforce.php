@@ -10,7 +10,7 @@ class Salesforce extends Model{
     public $serverURL;
     
     public function __construct(){
-        
+        $this->login();
     }
     
     private function login(){
