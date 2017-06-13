@@ -17,6 +17,6 @@ class SFDCConnector {
         $soap_data->username = SFDC_API_USER;
         $soap_data->password = SFDC_API_PASSWORD . SFDC_API_TOKEN;
         $login_response = $this->soap->login($soap_data);
-        var_dump($login_response);
+        var_dump($this->soap->__getLastRequest());
     }
 }
