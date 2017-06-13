@@ -20,6 +20,7 @@ class SFDCConnector {
             $login_response = $this->soap->login($soap_data);
         }
         catch(Exception $e){
+            var_dump($this->soap->__getLastRequestHeaders());
             var_dump($this->soap->__getLastRequest());
         }
         
