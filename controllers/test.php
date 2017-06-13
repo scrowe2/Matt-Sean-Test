@@ -20,7 +20,7 @@ class test extends Controller{
         $products = $sfdc->query("SELECT Name, Id, ProductCode, Description FROM Product2 LIMIT 30");
         $this->view->renderHeader();
         
-        
+        $this->view->render("productListing", $products);
        
         $this->view->renderFooter();
     }
