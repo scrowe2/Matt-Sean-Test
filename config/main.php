@@ -37,7 +37,7 @@ define('SFDC_API_USER', 'mseeger@widgets.qtc.demo');
 /**
  * SFDC Password for Integration
  */
-define('SFDC_API_PASSWORD', 'G00fellas!');
+define('SFDC_API_PASSWORD', 'G00dfellas!');
 
 /**
  * SFDC API Token for Integration
