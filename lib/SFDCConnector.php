@@ -16,7 +16,12 @@ class SFDCConnector {
         $soap_data = new stdClass();
         $soap_data->username = SFDC_API_USER;
         $soap_data->password = SFDC_API_PASSWORD . SFDC_API_TOKEN;
-        $login_response = $this->soap->login($soap_data);
-        var_dump($this->soap->__getLastRequest());
+        try{
+            $login_response = $this->soap->login($soap_data);
+        }
+        catch(Exception $e){
+            var_dump($this->soap->__getLastRequest());
+        }
+        
     }
 }
