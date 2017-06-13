@@ -28,7 +28,7 @@ class Salesforce extends Model{
 	$sf_username = $reqXML->createElementNS ("urn:partner.soap.sforce.com" , "sf:username", SFDC_API_USER);
 	$sf_login->appendChild($sf_username);
 
-	$sf_password = $reqXML->createElementNS ("urn:partner.soap.sforce.com" , "sf:password", SFDC_API_PASSWORD + SFDC_API_TOKEN);
+	$sf_password = $reqXML->createElementNS ("urn:partner.soap.sforce.com" , "sf:password", SFDC_API_PASSWORD . SFDC_API_TOKEN);
 	$sf_login->appendChild($sf_password);
 
         echo $reqXML->saveXML();
