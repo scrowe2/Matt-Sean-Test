@@ -8,7 +8,7 @@ class SFDCConnector {
     public $soap;
     
     public function __construct() {
-        $this->soap = new SoapClient('lib/sfdc_partner_v40.wsdl');
+        $this->soap = new SoapClient('lib/sfdc_partner_v40.wsdl', array('trace' => 1));
         $this->login();
     }
     
