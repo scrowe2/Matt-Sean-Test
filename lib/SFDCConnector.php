@@ -26,6 +26,7 @@ class SFDCConnector {
             var_dump($this->soap->__getLastResponseHeaders());
             var_dump($this->soap->__getLastResponse());
         }
+        var_dump($this->soap->__getLastResponse());
         
     }
 }
