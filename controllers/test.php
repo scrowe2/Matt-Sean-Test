@@ -12,18 +12,15 @@ class test extends Controller{
     public $Salesforce;
     public function __construct() {
         parent::__construct();
-        $this->loadModel('Salesforce');
+        //$this->loadModel('Salesforce');
     }
     
     public function Index(){
         
-        //$this->view->renderHeader();
-        //$this->view->render('index');
-        echo $this->Salesforce->serverURL;
-        echo $this->Salesforce->sessionId;
+        $this->view->renderHeader();
         
-        //$this->Salesforce->sessionId;
-        //$this->view->renderFooter();
+       
+        $this->view->renderFooter();
     }
 }
 
