@@ -1,8 +1,18 @@
-<pre>
+<table class="w3-table">
+
 <?php
-var_dump($context);
+foreach($context->result->records as $prod){
+?>
+    <tr class="w3-row">
+        <td class="w3-cell"><?=$prod->Name ?></td>
+        <td class="w3-cell"><?=$prod->ProductCode ?></td>
+        <td class="w3-cell"><?=$prod->Description ?></td>
+            
+    </tr>
+
+
+<?php
+}    
 ?>
 
-</pre>
-    
-    
+</table>    
