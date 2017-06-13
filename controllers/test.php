@@ -16,12 +16,13 @@ class test extends Controller{
     }
     
     public function Index(){
-        $this->view->renderHeader();
+        
+        //$this->view->renderHeader();
         //$this->view->render('index');
         
-        var_dump($this);
+        
         //$this->Salesforce->sessionId;
-        $this->view->renderFooter();
+        //$this->view->renderFooter();
     }
 }
 
