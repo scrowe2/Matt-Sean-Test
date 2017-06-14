@@ -5,6 +5,10 @@
  * @author mseeger
  */
 class SFDCConnector {
+    /**
+     *
+     * @var SoapClient 
+     */
     public $soap;
     
     public function __construct() {
