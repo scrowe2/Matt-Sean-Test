@@ -12,7 +12,8 @@
 foreach($context->result->records as $prod){
 ?>
     <tr class="w3-row">
-        <td class="w3-cell"><?=$prod->Image__c ?></td>
+        <td class="w3-cell">
+            <img style="height: 80px; width: auto;" class="w3-image" src="https://mfgqtc.my.salesforce.com/servlet/servlet.ImageServer?id=<?=$prod->SBQQ__ProductPictureID__c ?>&oid=00D460000000MPU"</td>
         <td class="w3-cell"><?=$prod->Name ?></td>
         <td class="w3-cell"><?=$prod->ProductCode ?></td>
         <td class="w3-cell"><?=$prod->Description ?></td>
