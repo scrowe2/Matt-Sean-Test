@@ -21,7 +21,7 @@ foreach($context->result->records as $prod){
         <td class="w3-cell"><?=$prod->ProductCode ?></td>
         <td class="w3-cell"><?=$prod->Description ?></td>
         <th class="w3-cell">
-            <button class="w3-button w3-red w3-text-black w3-hover-black w3-hover-text-red">Build It</button>
+            <a href="/products/configure?pid=<?= $prod->Id ?>" class="w3-button w3-red w3-text-black w3-hover-black w3-hover-text-red">Build It</a>
         </th>
     </tr>
 <?php
