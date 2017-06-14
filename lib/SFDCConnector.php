@@ -38,7 +38,17 @@ class SFDCConnector {
         $sessionData->sessionId = $this->sessionId;
         $sessionHeader = new SoapHeader("urn:enterprise.soap.sforce.com", "SessionHeader", $sessionData);
         
-        $this->soap->__setSoapHeaders($sessionHeader);
+        $packageVersions = new stdClass();
+        $packageVersions->PackageVersion = new stdClass();
+        $packageVersions->PackageVersion->majorNumber = 28;
+        $packageVersions->PackageVersion->minorNumber = 0;
+        $packageVersions->PackageVersion->namespace = "SBQQ";
+        $packageVersionsHeader = new SoapHeader("urn:enterprise.soap.sforce.com",PackageVersions, $packageVersions);
+        $sfdc->soap->__setSoapHeaders($packageVersionsHeader);
+        
+        $headers = array($sessionHeader, $packageVersionsHeader);
+        
+        $this->soap->__setSoapHeaders($headers);
    
     }
     public function query($queryString){
