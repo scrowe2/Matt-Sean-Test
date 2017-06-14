@@ -14,7 +14,7 @@ class debug extends Controller{
     public function Index(){
         
         $sfdc = new SFDCConnector();
-        var_dump($sfdc);
+        echo"<script>console.debug(";var_dump($sfdc);echo ");</script>";
     }
 }
 
