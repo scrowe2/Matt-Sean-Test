@@ -28,6 +28,8 @@ class debug extends Controller{
         echo "**Response\n";
         var_dump($sfdc->soap->__getLastResponse());
         var_dump($sfdc->soap);
+        $products = $sfdc->query("SELECT Name, SBQQ__ProductPictureID__c, Id, ProductCode, Description, Image__c FROM Product2 WHERE Name != '' AND Description != '' AND ProductCode != '' ORDER BY Name ASC LIMIT 10");
+        var_dump($products);
         echo "</pre>";
     }
 }
