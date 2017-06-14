@@ -4,7 +4,7 @@
  *
  * @author mseeger
  */
-class test extends Controller{
+class products extends Controller{
     /**
      *
      * @var Salesforce 
