@@ -16,11 +16,19 @@ class products extends Controller{
         $sfdc = new SFDCConnector();
         $products = $sfdc->query("SELECT Name, SBQQ__ProductPictureID__c, Id, ProductCode, Description, Image__c FROM Product2 WHERE Name != '' AND Description != '' AND ProductCode != '' ORDER BY Name ASC LIMIT 10");
         $this->view->renderHeader();
-        
         $this->view->render("productListing", $products);
-       
         $this->view->renderFooter();
     }
+    
+    public function configure(){
+        $this->view->renderHeader();
+        $this->view->render("index");
+        echo "<pre>";
+        echo var_dump($_GET);
+        echo "</pre>";
+        $this->view->renderFooter();
+    }
+    
 }
 
 ?>
