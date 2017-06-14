@@ -35,6 +35,4 @@
         <a href="#company" class="w3-bar-item w3-button w3-padding-large">Company</a>
         <a href="#contact" class="w3-bar-item w3-button w3-padding-large">Contact</a>
       </div>
-    </div>
-    <div class="w3-container">
-        
+    </div>        
