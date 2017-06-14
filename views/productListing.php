@@ -20,9 +20,11 @@ foreach($context->result->records as $prod){
         <td class="w3-cell"><?=$prod->Name ?></td>
         <td class="w3-cell"><?=$prod->ProductCode ?></td>
         <td class="w3-cell"><?=$prod->Description ?></td>
-        <th class="w3-cell">
+        <td class="w3-cell">
+            <?php if($prod->Configurable_on_Website__c){ ?>
             <a href="/products/configure?pid=<?= $prod->Id ?>" class="w3-button w3-red w3-text-black w3-hover-black w3-hover-text-red">Build It</a>
-        </th>
+            <?php } ?>
+        </td>
     </tr>
 <?php
 }    
