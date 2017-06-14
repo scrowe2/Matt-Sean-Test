@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Cloudcrest Capital</title>
+<title>R</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/public/css/w3.css">
@@ -21,8 +21,8 @@
             <a href="#" class="w3-bar-item w3-padding-large w3-white">
               <img src="https://mfgqtc--c.na40.content.force.com/servlet/servlet.ImageServer?id=01546000000NZIF&oid=00D460000000MPU&lastMod=1495748705000" href=""/>
             </a>
-            <a href="#services" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black">Services</a>
-            <a href="#clients" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black">Clients</a>
+            <a href="/products" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black">Products</a>
+            <a href="#clients" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black">Customers</a>
             <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black">Team</a>
             <a href="#company" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black">Company</a>
             <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black">Contact</a>
@@ -30,7 +30,7 @@
 
           <!-- Navbar on small screens -->
           <div id="navDemo" class="w3-bar-block w3-white w3-text-black w3-hide w3-hide-large w3-hide-medium w3-large">
-            <a href="#services" class="w3-bar-item w3-button w3-padding-large">Services</a>
+            <a href="/products" class="w3-bar-item w3-button w3-padding-large">Products</a>
             <a href="#clients" class="w3-bar-item w3-button w3-padding-large">Clients</a>
             <a href="#team" class="w3-bar-item w3-button w3-padding-large">Team</a>
             <a href="#company" class="w3-bar-item w3-button w3-padding-large">Company</a>
