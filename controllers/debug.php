@@ -9,7 +9,7 @@ class debug extends Controller{
      *
      * @var Salesforce 
      */
-    
+            
     public function __construct() {
         parent::__construct();
         
@@ -17,7 +17,14 @@ class debug extends Controller{
     
     public function Index(){
         $sfdc = new SFDCConnector();
-        //$products = $sfdc->query("SELECT Name, SBQQ__ProductPictureID__c, Id, ProductCode, Description, Image__c FROM Product2 WHERE Name != '' AND Description != '' AND ProductCode != '' ORDER BY Name ASC LIMIT 10");
+        $packageVersions = new stdClass();
+        $packageVersions->PackageVersion = new stdClass();
+        $packageVersions->PackageVersion->majorNumber = 28;
+        $packageVersions->PackageVersion->minorNumber = 0;
+        $packageVersions->PackageVersion->namespace = "SBQQ";
+        $packageVersionsHeader = new SoapHeader("urn:enterprise.soap.sforce.com",PackageVersions, $packageVersions);
+        $sfdc->soap->__setSoapHeaders($packageVersionsHeader);
+//$products = $sfdc->query("SELECT Name, SBQQ__ProductPictureID__c, Id, ProductCode, Description, Image__c FROM Product2 WHERE Name != '' AND Description != '' AND ProductCode != '' ORDER BY Name ASC LIMIT 10");
         echo "<pre>";
         echo "**Requst Header\n";
         var_dump($sfdc->soap->__getLastRequestHeaders());
