@@ -17,7 +17,7 @@ class products extends Controller{
     
     public function Index(){
         $sfdc = new SFDCConnector();
-        $products = $sfdc->query("SELECT Name, Id, ProductCode, Description FROM Product2 WHERE Name != '' AND Description != '' AND ProductCode != '' ORDER BY Name ASC LIMIT 30");
+        $products = $sfdc->query("SELECT Name, Id, ProductCode, Description, Image__c FROM Product2 WHERE Name != '' AND Description != '' AND ProductCode != '' ORDER BY Name ASC LIMIT 10");
         $this->view->renderHeader();
         
         $this->view->render("productListing", $products);

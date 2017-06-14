@@ -32,7 +32,7 @@ define('DEFAULT_METHOD', 'Index');
  * 
  * SFDC Username for Integration
  */
-define('SFDC_API_USER', 'mseegerapi@mfg.qtc.demo');
+define('SFDC_API_USER', 'mseeger@mfg.qtc.demo');
 
 /**
  * SFDC Password for Integration
