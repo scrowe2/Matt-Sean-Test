@@ -36,7 +36,7 @@ class SFDCConnector {
         
         $sessionData = new stdClass();
         $sessionData->sessionId = $this->sessionId;
-        $sessionHeader = new SoapHeader("urn:partner.soap.sforce.com", "SessionHeader", $sessionData);
+        $sessionHeader = new SoapHeader("urn:enterprise.soap.sforce.com", "SessionHeader", $sessionData);
         
         $this->soap->__setSoapHeaders($sessionHeader);
    
