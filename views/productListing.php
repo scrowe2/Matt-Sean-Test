@@ -5,6 +5,7 @@
             <th class="w3-cell">Product</th>
             <th class="w3-cell">Product Code</th>
             <th class="w3-cell">Description</th>
+            <th class="w3-cell"></th>
         </tr>
     </thead>
     <tbody>
@@ -19,6 +20,9 @@ foreach($context->result->records as $prod){
         <td class="w3-cell"><?=$prod->Name ?></td>
         <td class="w3-cell"><?=$prod->ProductCode ?></td>
         <td class="w3-cell"><?=$prod->Description ?></td>
+        <th class="w3-cell">
+            <button class="w3-button w3-red w3-text-black w3-hover-black w3-hover-text-red">Build It</button>
+        </th>
     </tr>
 <?php
 }    
