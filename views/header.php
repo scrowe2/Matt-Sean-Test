@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>R</title>
+<title>RHINO Manufacturing</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/public/css/w3.css">
@@ -38,3 +38,5 @@
           </div>
         </div>
     </header>
+    <div class="w3-container">
+        
