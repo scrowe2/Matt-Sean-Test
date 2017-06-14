@@ -18,7 +18,7 @@ class debug extends Controller{
     public function Index(){
         $sfdc = new SFDCConnector();
         //$products = $sfdc->query("SELECT Name, SBQQ__ProductPictureID__c, Id, ProductCode, Description, Image__c FROM Product2 WHERE Name != '' AND Description != '' AND ProductCode != '' ORDER BY Name ASC LIMIT 10");
-        
+        echo "<pre>";
         echo "**Requst Header\n";
         var_dump($sfdc->soap->__getLastRequestHeaders());
         echo "**Requst\n";
@@ -27,6 +27,7 @@ class debug extends Controller{
         var_dump($sfdc->soap->__getLastResponseHeaders());
         echo "**Response\n";
         var_dump($sfdc->soap->__getLastResponse());
+        echo "</pre>";
     }
 }
 
