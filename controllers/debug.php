@@ -12,7 +12,7 @@ class debug extends Controller{
     }
     
     public function Index(){
-        
+        echo getcwd();
         $sfdc = new SFDCConnector();
         echo"<script>console.debug(";var_dump($sfdc);echo ");</script>";
     }
