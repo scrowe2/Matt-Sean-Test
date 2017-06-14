@@ -17,21 +17,8 @@ class debug extends Controller{
     
     public function Index(){
         $sfdc = new SFDCConnector();
-        
-//$products = $sfdc->query("SELECT Name, SBQQ__ProductPictureID__c, Id, ProductCode, Description, Image__c FROM Product2 WHERE Name != '' AND Description != '' AND ProductCode != '' ORDER BY Name ASC LIMIT 10");
+        $prods = $sfdc->query("SELECT Id, sbqq__ProductPictureID__c, Name, ProductCode FROM Product2 LIMIT 30");
         echo "<pre>";
-        
-        $products = $sfdc->query("SELECT Name, sbqq__ProductPictureID__c, Id, ProductCode, Description, Image__c FROM Product2 WHERE Name != '' AND Description != '' AND ProductCode != '' ORDER BY Name ASC LIMIT 10");
-        
-        echo "**Requst Header\n";
-        var_dump($sfdc->soap->__getLastRequestHeaders());
-        echo "**Requst\n";
-        var_dump($sfdc->soap->__getLastRequest());
-        echo "**Response Header\n";
-        var_dump($sfdc->soap->__getLastResponseHeaders());
-        echo "**Response\n";
-        var_dump($sfdc->soap->__getLastResponse());
-        var_dump($sfdc->soap);
         var_dump($products);
         echo "</pre>";
     }
