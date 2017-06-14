@@ -20,6 +20,9 @@ class debug extends Controller{
         
 //$products = $sfdc->query("SELECT Name, SBQQ__ProductPictureID__c, Id, ProductCode, Description, Image__c FROM Product2 WHERE Name != '' AND Description != '' AND ProductCode != '' ORDER BY Name ASC LIMIT 10");
         echo "<pre>";
+        
+        $products = $sfdc->query("SELECT Name, sbqq__ProductPictureID__c, Id, ProductCode, Description, Image__c FROM Product2 WHERE Name != '' AND Description != '' AND ProductCode != '' ORDER BY Name ASC LIMIT 10");
+        
         echo "**Requst Header\n";
         var_dump($sfdc->soap->__getLastRequestHeaders());
         echo "**Requst\n";
@@ -29,7 +32,6 @@ class debug extends Controller{
         echo "**Response\n";
         var_dump($sfdc->soap->__getLastResponse());
         var_dump($sfdc->soap);
-        $products = $sfdc->query("SELECT Name, sbqq__ProductPictureID__c, Id, ProductCode, Description, Image__c FROM Product2 WHERE Name != '' AND Description != '' AND ProductCode != '' ORDER BY Name ASC LIMIT 10");
         var_dump($products);
         echo "</pre>";
     }
