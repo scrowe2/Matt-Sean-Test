@@ -42,7 +42,7 @@ define('SFDC_API_PASSWORD', 'G00dfellas!');
 /**
  * SFDC API Token for Integration
  */
-define('SFDC_API_TOKEN', NULL);
+define('SFDC_API_TOKEN', "bhdytbkDNlIU2BSKovvuuyuq7");
 
 
 
