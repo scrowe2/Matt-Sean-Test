@@ -45,7 +45,7 @@ class SFDCConnector {
         $packageVersions->PackageVersion->namespace = "SBQQ";
         $packageVersionsHeader = new SoapHeader("urn:enterprise.soap.sforce.com","PackageVersions", $packageVersions);
         
-        $headers = array($sessionHeader, $packageVersionsHeader);
+        $headers = array($sessionHeader/*, $packageVersionsHeader*/);
         
         $this->soap->__setSoapHeaders($headers);
    

@@ -5,10 +5,7 @@
  * @author mseeger
  */
 class test extends Controller{
-    /**
-     *
-     * @var Salesforce 
-     */
+
     
     public function __construct() {
         parent::__construct();
