@@ -27,6 +27,7 @@ class debug extends Controller{
         var_dump($sfdc->soap->__getLastResponseHeaders());
         echo "**Response\n";
         var_dump($sfdc->soap->__getLastResponse());
+        var_dump($sfdc->soap);
         echo "</pre>";
     }
 }
