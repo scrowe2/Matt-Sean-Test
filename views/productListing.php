@@ -6,7 +6,7 @@
             <th class="w3-cell">Description</th>
         </tr>
     </thead>
-    <tbody
+    <tbody>
 <?php
 foreach($context->result->records as $prod){
 ?>
