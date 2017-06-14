@@ -26,7 +26,11 @@ foreach($context->result->records as $prod){
             <?php } ?>
         </td>
     </tr>
-    
+<?php
+}    
+
+foreach($context->result->records as $prod){
+?>    
     <tr class="w3-row w3-hide-medium w3-hide-large">
         <td class="w3-cell">
             <div class="w3-container">
