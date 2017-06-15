@@ -1,6 +1,6 @@
 <table class="w3-table-all">
     <thead>
-        <tr class="w3-row w3-hide-small">
+        <tr class="w3-row w3-hide-small w3-hide-medium">
             <th class="w3-cell"></th>
             <th class="w3-cell">Product</th>
             <th class="w3-cell">Product Code</th>
@@ -12,7 +12,7 @@
 <?php
 foreach($context->result->records as $prod){
 ?>
-    <tr class="w3-row w3-hide-small">
+    <tr class="w3-row w3-hide-small w3-hide-medium">
         <td class="w3-cell">
             <img style="height: 80px; width: auto;" src="https://mfgqtc.my.salesforce.com/servlet/servlet.ImageServer?id=<?=$prod->SBQQ__ProductPictureID__c ?>&oid=00D460000000MPU" />
         </td>
@@ -31,7 +31,7 @@ foreach($context->result->records as $prod){
 
 foreach($context->result->records as $prod){
 ?>    
-    <tr class="w3-row w3-hide-medium w3-hide-large">
+    <tr class="w3-row w3-hide-large">
         <td class="w3-cell">
             <div class="w3-container w3-center">
                 <h3><?=$prod->Name ?></h3>
