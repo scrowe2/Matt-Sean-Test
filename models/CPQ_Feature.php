@@ -12,5 +12,28 @@
  * @author mseeger
  */
 class CPQ_Feature {
-    //put your code here
+    /**
+     *
+     * @var CPQ_ProductOption[]
+     */
+    public $options;
+    /**
+     *
+     * @var Integer 
+     */
+    public $order;
+    /**
+     *
+     * @var Integer 
+     */
+    public $MinOptions;
+    /**
+     *
+     * @var Integer 
+     */
+    public $MaxOptions;
+    
+    public function __construct() {
+        ;
+    }
 }

@@ -12,5 +12,34 @@
  * @author mseeger
  */
 class CPQ_ProductOption {
+    /**
+     *
+     * @var CPQ_Product 
+     */
+    public $product;
+    /**
+     *
+     * @var Integer 
+     */
+    public $quantity;
+    /**
+     *
+     * @var Boolean 
+     */
+    public $selected;
+    /**
+     *
+     * @var Boolean 
+     */
+    public $required;
+    /**
+     *
+     * @var Integer 
+     */
+    public $order;
+    
+    public function __construct() {
+        ;
+    }
 
 }

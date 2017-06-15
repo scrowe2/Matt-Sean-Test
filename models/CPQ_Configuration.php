@@ -1,16 +1,27 @@
 <?php
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+require_once 'CPQ_Feature.php';
+require_once 'CPQ_ProductOption.php';
+require_once 'CPQ_Product.php';
 
 /**
- * Description of CPQ_Configuration
+ * Represents a configuration in Salesforce CPQ
  *
  * @author mseeger
  */
 class CPQ_Configuration {
-    //put your code here
+    /**
+     *
+     * @var CPQ_Product Object 
+     */
+    public $product;
+    
+    /**
+     *
+     * @var CPQ_Feature[] Object 
+     */
+    public $features;
+    
+    public function __construct() {
+        ;
+    }
 }
