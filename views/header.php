@@ -12,7 +12,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body style="padding-top: 60px;">
     <!-- Navbar -->
     <div class="w3-top">
       <div class="w3-bar w3-red w3-card-2 w3-left-align w3-large">
