@@ -7,6 +7,6 @@
     } 
     ?>
     <script>
-        productModel = <?=$context->$LoadFromIdJSON ?>;
+        productModel = <?=$context->LoadFromIdJSON ?>;
     </script>
 </div>
