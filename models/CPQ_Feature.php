@@ -14,6 +14,16 @@
 class CPQ_Feature {
     /**
      *
+     * @var String 
+     */
+    public $Id;
+    /**
+     *
+     * @var String 
+     */
+    public $Name;
+    /**
+     *
      * @var CPQ_ProductOption[]
      */
     public $options;
@@ -34,6 +44,6 @@ class CPQ_Feature {
     public $MaxOptions;
     
     public function __construct() {
-        ;
+        $this->options = array();
     }
 }

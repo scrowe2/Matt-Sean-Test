@@ -16,6 +16,11 @@ class CPQ_Product {
      *
      * @var String 
      */
+    public $Id;
+    /**
+     *
+     * @var String 
+     */
     public $Name;
     /**
      *

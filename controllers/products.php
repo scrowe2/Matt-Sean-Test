@@ -24,12 +24,16 @@ class products extends Controller{
     }
     
     public function configure(){
-        $this->view->renderHeader();
-        $this->view->render("index");
-        echo "<pre>";
         $this->loadModel("CPQ_Configuration", "Config");
         $this->Config->LoadFromId($_GET['pid']);
-        echo "</pre>";
+        
+        $this->view->renderHeader();
+        
+        
+       
+        $this->view->render('configuration',$this->Config);
+        
+        
         $this->view->renderFooter();
     }
     
