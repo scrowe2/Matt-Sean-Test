@@ -54,6 +54,6 @@ class CPQ_Configuration {
             
             $this->features[] = $featureToAdd;
         }
-        var_dump($model_object);
+        //var_dump($model_object);
     }
 }
