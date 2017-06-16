@@ -48,7 +48,7 @@ class SFDCConnector {
             var_dump($this->soap->__getLastResponseHeaders());
             var_dump($this->soap->__getLastResponse());
         }
-        $this->ServerURL = $login_response->result->serverUrl;
+        $this->serverURL = $login_response->result->serverUrl;
         $this->sessionId = $login_response->result->sessionId;
         $this->soap->__setLocation($this->serverURL);
         
