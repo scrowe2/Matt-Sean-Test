@@ -48,8 +48,8 @@ class CPQ_Configuration {
             $featureToAdd = new CPQ_Feature();
             $featureToAdd->Id = $f->Id;
             $featureToAdd->Name = $f->Name;
-            $featureToAdd->MaxOptions = $f->SBQQ__MinOptionCount__c == NULL ? 0 : $f->SBQQ__MinOptionCount__c;
-            $featureToAdd->MinOptions = $f->SBQQ__MaxOptionCount__c == NULL ? -1 : $f->SBQQ__MaxOptionCount__c;
+            $featureToAdd->MaxOptions = property_exists($f, 'SBQQ__MinOptionCount__c') ? $f->SBQQ__MinOptionCount__c : 0;
+            $featureToAdd->MinOptions = property_exists($f, 'SBQQ__MaxOptionCount__c') ? $f->SBQQ__MaxOptionCount__c : -1;
             $featureToAdd->order = $f->SBQQ__Number__c;
             
             $this->features[] = $featureToAdd;
