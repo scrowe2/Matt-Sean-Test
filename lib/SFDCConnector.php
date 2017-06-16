@@ -11,8 +11,26 @@ class SFDCConnector {
      */
     public $soap;
     
+    /**
+     *
+     * @var String 
+     */
+    public $serverURL;
+    
+    /**
+     *
+     * @var String 
+     */
+    public $sessionId;
+    
+    /**
+     *
+     * @var SOAPClient 
+     */
+    public $cpqSoap;
     public function __construct() {
         $this->soap = new SoapClient('lib/sfdc_enterprise_v40.wsdl', array('trace' => 1));
+        $this->cpqSoap = new SoapClient('lib/SalesforceCPQAPI.wsdl', array('trace' => 1));
         $this->login();
     }
     
@@ -30,7 +48,7 @@ class SFDCConnector {
             var_dump($this->soap->__getLastResponseHeaders());
             var_dump($this->soap->__getLastResponse());
         }
-        $this->serverURL = $login_response->result->serverUrl;
+        $this->ServerURL = $login_response->result->serverUrl;
         $this->sessionId = $login_response->result->sessionId;
         $this->soap->__setLocation($this->serverURL);
         
@@ -46,10 +64,11 @@ class SFDCConnector {
         $packageVersionsHeader = new SoapHeader("urn:enterprise.soap.sforce.com","PackageVersions", $packageVersions);
         
         $headers = array($sessionHeader/*, $packageVersionsHeader*/);
-        
+        $this->cpqSoap->__setSoapHeaders($headers);
         $this->soap->__setSoapHeaders($headers);
    
     }
+    
     public function query($queryString){
         $soap_data = new stdClass();
         $soap_data->queryString = $queryString;
@@ -60,5 +79,20 @@ class SFDCConnector {
             echo $e->getMessage();
         }
         return $query_response;
+    }
+    
+    /**
+     * 
+     * @param String $productID
+     * @return JSON ProductModel
+     */
+    public function LoadProductByID($productID){
+        $LoadProductByIDResponse;
+        try{
+            $LoadProductByIDResponse = $this->cpqSoap->LoadProductByID($productID);
+        } catch (Exception $ex) {
+            
+        }
+        var_dump($LoadProductByIDResponse);
     }
 }
