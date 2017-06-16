@@ -87,11 +87,11 @@ class SFDCConnector {
      * @return JSON ProductModel
      */
     public function LoadProductByID($productID){
-        $LoadProductByIDResponse;
+        $LoadProductByIDResponse = NULL;
         try{
             $LoadProductByIDResponse = $this->cpqSoap->LoadProductByID($productID);
         } catch (Exception $ex) {
-            
+            var_dump($ex);
         }
         var_dump($LoadProductByIDResponse);
     }

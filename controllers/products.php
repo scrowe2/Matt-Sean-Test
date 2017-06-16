@@ -23,10 +23,10 @@ class products extends Controller{
     public function configure(){
         $this->view->renderHeader();
         $this->view->render("index");
-        
+        echo "<pre>";
         $sfdc = new SFDCConnector();
         $resp = $sfdc->LoadProductByID($_GET['pid']);
-        echo "<pre>";
+        
         
         echo var_dump($resp);
         echo "</pre>";
