@@ -5,8 +5,11 @@
  * @author mseeger
  */
 class products extends Controller{
-
-    
+    /**
+     *
+     * @var CPQ_Configuration 
+     */
+    public $Config;
     public function __construct() {
         parent::__construct();
         
@@ -24,11 +27,8 @@ class products extends Controller{
         $this->view->renderHeader();
         $this->view->render("index");
         echo "<pre>";
-        $sfdc = new SFDCConnector();
-        $resp = $sfdc->LoadProductByID($_GET['pid']);
-        
-        
-        echo var_dump($resp);
+        $this->loadModel("CPQ_Configuration", "Config");
+        $this->Config->LoadFromId($_GET['pid']);
         echo "</pre>";
         $this->view->renderFooter();
     }
