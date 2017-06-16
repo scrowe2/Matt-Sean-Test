@@ -38,7 +38,7 @@ class CPQ_Configuration {
         $this->product->Name = $model_object->record->Name;
         $this->product->Description = $model_object->record->Description;
         $this->product->SKU = $model_object->record->ProductCode;
-        $this->product->AbsoluteImageURL = "https://mfgqtc.my.salesforce.com/servlet/servlet.ImageServer?id=" . $model_object->record->SBQQ__ProductPictureID__c . "&oid=00D460000000MPU";
+        //$this->product->AbsoluteImageURL = "https://mfgqtc.my.salesforce.com/servlet/servlet.ImageServer?id=" . $model_object->record->SBQQ__ProductPictureID__c . "&oid=00D460000000MPU";
         
         /*
          * Pull the Features from the JSON Model to the PHO Model
