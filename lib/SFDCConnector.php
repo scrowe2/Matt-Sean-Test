@@ -88,8 +88,10 @@ class SFDCConnector {
      */
     public function LoadProductByID($productID){
         $LoadProductByIDResponse = NULL;
+        $soap_data = stdClass();
+        $soap_data->productId = $productID;
         try{
-            $LoadProductByIDResponse = $this->cpqSoap->LoadProductByID($productID);
+            $LoadProductByIDResponse = $this->cpqSoap->LoadProductByID($soap_data);
         } catch (Exception $ex) {
             var_dump($ex);
         }
