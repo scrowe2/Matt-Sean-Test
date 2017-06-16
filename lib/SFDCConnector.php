@@ -96,7 +96,7 @@ class SFDCConnector {
         } 
         
         catch (Exception $ex) {
-            var_dump($ex);
+            //var_dump($ex);
         }
         
         return $LoadProductByIDResponse->result;
