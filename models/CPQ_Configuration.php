@@ -21,6 +21,12 @@ class CPQ_Configuration {
      */
     public $features;
     
+    /**
+     *
+     * @var JSON 
+     */
+    public $LoadFromIdJSON;
+    
     public function __construct() {
         $this->product = new CPQ_Product();
         $this->features = array();
@@ -29,6 +35,7 @@ class CPQ_Configuration {
     public function LoadFromId($configurableProductId){
         $sfdc = new SFDCConnector();
         $model_json = $sfdc->LoadProductByID($configurableProductId);
+        $this->LoadFromIdJSON = $model_json;
         $model_object = json_decode($model_json);
         
         /*
@@ -54,6 +61,6 @@ class CPQ_Configuration {
             
             $this->features[] = $featureToAdd;
         }
-        //var_dump($model_object);
+        var_dump($model_object);
     }
 }

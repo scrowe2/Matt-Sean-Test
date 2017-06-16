@@ -6,4 +6,7 @@
         $this->render('feature',$feature);
     } 
     ?>
+    <script>
+        productModel = <?=$contet->$LoadFromIdJSON ?>;
+    </script>
 </div>
