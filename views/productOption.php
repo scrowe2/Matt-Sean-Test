@@ -2,9 +2,9 @@
     <td class="w3-cell">
         <input type="checkbox" selected="<?=$context->selected ? 'true' : 'false'?>" disabled="<?=$context->required ? 'true' : 'false'?>" name="<?=$context->Id?>"/>            
     </td>
-    <td class="w3-cell"><?=$prod->product->Name ?></td>
-    <td class="w3-cell"><?=$prod->product->SKU ?></td>
-    <td class="w3-cell"><?=$prod->product->Description ?></td>
-    <td class="w3-cell"><?=$prod->quantity ?></td>
-    <td class="w3-cell"><?=$prod->unitPrice ?></td>
+    <td class="w3-cell"><?=$context->product->Name ?></td>
+    <td class="w3-cell"><?=$context->product->SKU ?></td>
+    <td class="w3-cell"><?=$context->product->Description ?></td>
+    <td class="w3-cell"><?=$context->quantity ?></td>
+    <td class="w3-cell"><?=$context->unitPrice ?></td>
 </tr>
