@@ -70,7 +70,7 @@ class CPQ_Configuration {
             $po->Id = $p->record->Id = "a0d46000000OaFpAAK";
             $po->product->Id = $p->record->SBQQ__OptionalSKU__c;
             $po->product->Name = $p->record->SBQQ__ProductName__c;
-            $po->product->Description = $p->record->SBQQ__ProductDescription__c;
+            $po->product->Description = property_exists($p->record, 'SBQQ__ProductDescription__c') ? $p->record->SBQQ__ProductDescription__c : '';
             $po->product->SKU = $p->record->SBQQ__ProductCode__c;
             
             $po->order = $p->record->SBQQ__Number__c;
