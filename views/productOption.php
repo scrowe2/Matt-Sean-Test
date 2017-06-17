@@ -1,6 +1,6 @@
 <tr class="w3-row w3-hide-small w3-hide-medium">
     <td class="w3-cell">
-        <input type="checkbox" selected="<?=$context->selected ? 'true' : 'false'?>" disabled="<?=$context->required ? 'true' : 'false'?>" name="<?=$context->Id?>"/>            
+        <input type="checkbox" selected="<?=$context->selected ? 'selected' : ''?>" name="<?=$context->Id?>"<?=$context->required ? ' disabled' : ''?>"/>            
     </td>
     <td class="w3-cell"><?=$context->product->Name ?></td>
     <td class="w3-cell"><?=$context->product->SKU ?></td>
