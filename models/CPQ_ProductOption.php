@@ -14,6 +14,11 @@
 class CPQ_ProductOption {
     /**
      *
+     * @var String 
+     */
+    public $Id;
+    /**
+     *
      * @var CPQ_Product 
      */
     public $product;
@@ -37,9 +42,19 @@ class CPQ_ProductOption {
      * @var Integer 
      */
     public $order;
+    /**
+     *
+     * @var Integer 
+     */
+    public $quantityEditable;
+    /**
+     *
+     * @var Float 
+     */
+    public $unitPrice;
     
     public function __construct() {
-        ;
+        $this->product = new CPQ_Product();
     }
 
 }

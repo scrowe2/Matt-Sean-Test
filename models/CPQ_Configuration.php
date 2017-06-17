@@ -61,6 +61,34 @@ class CPQ_Configuration {
             
             $this->features[] = $featureToAdd;
         }
+        
+        /*
+         * Loop over the OPtions
+         */
+        foreach($model_object->options as $p ){
+            $po = new CPQ_ProductOption();
+            $po->Id = $p->record->Id = "a0d46000000OaFpAAK";
+            $po->product->Id = $p->record->SBQQ__OptionalSKU__c;
+            $po->product->Name = $p->record->SBQQ__ProductName__c;
+            $po->product->Description = $p->record->SBQQ__ProductDescription__c;
+            $po->product->SKU = $p->record->SBQQ__ProductCode__c;
+            
+            $po->order = $p->record->SBQQ__Number__c;
+            $po->quantity = $p->record->SBQQ__Quantity__c;
+            $po->quantityEditable = $p->record->SBQQ__QuantityEditable__c;
+            $po->required = $p->record->SBQQ__Required__c;
+            $po->selected = $p->record->SBQQ__Selected__c;
+            $po->unitPrice = $p->record->SBQQ__UnitPrice__c;
+            
+            $featureId = $p->record->SBQQ__Feature__c;
+            
+            foreach($this->features as $f){
+                if($f->Id == $featureId){
+                    $f->options[] = $po;
+                    break;
+                }
+            }
+        }
         //var_dump($model_object);
     }
 }
