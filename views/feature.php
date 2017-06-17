@@ -3,10 +3,24 @@
     <p>Min Selections: <?=$context->MinOptions?></p>
     <p>Max Selections: <?=$context->MaxOptions?></p>
     <div class="w3-container">
-        <?php
-        foreach($context->options as $option){
-            $this->render('productOption',$option);
-        }
-        ?>
+        <table class="w3-table-all">
+            <thead>
+                <tr class="w3-row">
+                    <th class="w3-cell"></th>
+                    <th class="w3-cell">Option</th>
+                    <th class="w3-cell">Product Code</th>
+                    <th class="w3-cell">Description</th>
+                    <th class="w3-cell">Quantity</th>
+                    <th class="w3-cell">Price</th>
+                </tr>
+            </thead>
+            <tbody>
+            <?php
+            foreach($context->options as $option){
+                $this->render('productOption',$option);
+            }
+            ?>
+            </tbody>
+        </table>
     </div>
 </div>
