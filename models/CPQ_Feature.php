@@ -43,7 +43,14 @@ class CPQ_Feature {
      */
     public $MaxOptions;
     
+    /**
+     * True if the option should be a radio button.
+     * @var Boolean 
+     */
+    public $isRadio;
+    
     public function __construct() {
+        $this->isRadio = false;
         $this->options = array();
     }
 }

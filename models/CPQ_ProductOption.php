@@ -53,7 +53,21 @@ class CPQ_ProductOption {
      */
     public $unitPrice;
     
+    /**
+     * True if the field is a radion button
+     * @var Boolean 
+     */
+    public $isRadio;
+    
+    /**
+     *  Id of the Feature
+     * @var String 
+     */
+    public $featureId;
+    
+    
     public function __construct() {
+        $this->isRadio = false;
         $this->product = new CPQ_Product();
     }
 

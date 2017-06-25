@@ -55,9 +55,10 @@ class CPQ_Configuration {
             $featureToAdd = new CPQ_Feature();
             $featureToAdd->Id = $f->Id;
             $featureToAdd->Name = $f->Name;
-            $featureToAdd->MaxOptions = property_exists($f, 'SBQQ__MinOptionCount__c') ? $f->SBQQ__MinOptionCount__c : 0;
+            $featureToAdd->MaxOptions = property_exists($f, 'SBQQ__MinOptionCount__c') ? $f->SBQQ__MinOptionCount__c : -1;
             $featureToAdd->MinOptions = property_exists($f, 'SBQQ__MaxOptionCount__c') ? $f->SBQQ__MaxOptionCount__c : -1;
             $featureToAdd->order = $f->SBQQ__Number__c;
+            $featureToAdd->isRadio = $featureToAdd->MaxOptions == 1 ? true : false;
             
             $this->features[] = $featureToAdd;
         }
@@ -84,6 +85,7 @@ class CPQ_Configuration {
             
             foreach($this->features as $f){
                 if($f->Id == $featureId){
+                    $po->isRadio = $f->isRadio;
                     $f->options[] = $po;
                     break;
                 }
