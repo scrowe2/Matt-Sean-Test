@@ -1,7 +1,9 @@
 <div class='w3-container w3-border-red w3-round w3-border w3-margin-bottom'>
     <h3><?=$context->Name?></h3>
-    <p>Min Selections: <?=$context->MinOptions?></p>
-    <p>Max Selections: <?=$context->MaxOptions?></p>
+    <!--
+    <p>Min Selections: <?$context->MinOptions?></p>
+    <p>Max Selections: <?$context->MaxOptions?></p>
+    -->
     <div class="w3-container">
         <table class="w3-table-all">
             <thead>
