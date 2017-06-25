@@ -85,6 +85,7 @@ class CPQ_Configuration {
             
             foreach($this->features as $f){
                 if($f->Id == $featureId){
+                    $po->featureId = $f->Id;
                     $po->isRadio = $f->isRadio;
                     $f->options[] = $po;
                     break;
