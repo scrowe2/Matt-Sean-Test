@@ -68,7 +68,7 @@ class CPQ_Configuration {
          */
         foreach($model_object->options as $p ){
             $po = new CPQ_ProductOption();
-            $po->Id = $p->record->Id = "a0d46000000OaFpAAK";
+            $po->Id = $p->record->Id;
             $po->product->Id = $p->record->SBQQ__OptionalSKU__c;
             $po->product->Name = $p->record->SBQQ__ProductName__c;
             $po->product->Description = property_exists($p->record, 'SBQQ__ProductDescription__c') ? $p->record->SBQQ__ProductDescription__c : '';
