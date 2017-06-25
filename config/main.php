@@ -44,6 +44,11 @@ define('SFDC_API_PASSWORD', 'G00dfellas!');
  */
 define('SFDC_API_TOKEN', 'bhdytbkDNlIU2BSKovvuuyuq7');
 
+/**
+ * SETTING THE LOCALE
+ * @todo make this multi currency based on the Browser locale if needed
+ */
+setlocale(LC_MONETARY, 'en_US');
 
 
 
