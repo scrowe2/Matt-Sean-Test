@@ -6,5 +6,5 @@
     <td class="w3-cell"><?=$context->product->SKU ?></td>
     <td class="w3-cell"><?=$context->product->Description ?></td>
     <td class="w3-cell"><?=$context->quantity ?></td>
-    <td class="w3-cell"><?= money_format('%n', $context->unitPrice) ?></td>
+    <td class="w3-cell w3-right-align"><?= money_format('%n', $context->unitPrice) ?></td>
 </tr>
