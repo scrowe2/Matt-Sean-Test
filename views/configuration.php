@@ -19,6 +19,24 @@
     </form>
 </div>
 <script>
-    productModel = <?=$context->LoadFromIdJSON ?>;
+productModel = <?=$context->LoadFromIdJSON ?>;
+function updateModel(){
+    console.debug('Updating Model ....');
+    for(i=0; i < productModel.options.length; i++){
+            m_op = productModel.options[i];
+            f_in = $("input[value='" + m_op.record.Id + "']")[0];
+            m_op.record.SBQQ__Selected__c = f_in.checked;
+    }
+    console.debug('Model UPdated');
+}
+function attachUpdater(){
+    ins = document.forms.configForm.getElementsByTagName('input');
+    for(i=0; i<ins.length; i++){
+        ins[i].addEventListener("change",updateModel);
+    }
+}
+window.document.onload = function(e){
+    attachUpdater();
+}
 </script>
 
