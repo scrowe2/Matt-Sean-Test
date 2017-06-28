@@ -49,7 +49,7 @@
                     </tr>
                 </table>
                 <!--<div><a class="w3-button w3-red w3-hover-black w3-hover-text-red">Calculate</a></div>-->
-                <div><a class="w3-button w3-black w3-hover-red w3-hover-text-black" href="//inquiry/thanks">Get a Quote</a></div>
+                <div><a class="w3-button w3-black w3-hover-red w3-hover-text-black" href="/inquiry/thankYou">Get a Quote</a></div>
             </div>
         </div>
     </form>
