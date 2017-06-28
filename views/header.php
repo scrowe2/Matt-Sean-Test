@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <title>RHINO Manufacturing</title>
 <meta charset="UTF-8">
