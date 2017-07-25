@@ -21,7 +21,7 @@ foreach($context->result->records as $prod){
         <td class="w3-cell"><?=$prod->ProductCode ?></td>
         <td class="w3-cell"><?=$prod->Description ?></td>
         <td class="w3-cell">
-            <?php if($prod->Configurable_on_Website__c){ ?>
+            <?php if($prod->WebConfigurable__c){ ?>
             <a href="/products/configure?pid=<?= $prod->Id ?>" class="w3-button w3-red w3-text-black w3-hover-black w3-hover-text-red">Build It</a>
             <?php } ?>
         </td>
@@ -38,7 +38,7 @@ foreach($context->result->records as $prod){
                 <p><?=$prod->ProductCode ?></p>
                 <img style="height: 160px; width: auto;" src="https://mfgqtc.my.salesforce.com/servlet/servlet.ImageServer?id=<?=$prod->SBQQ__ProductPictureID__c ?>&oid=00D460000000MPU" />
                 <p><?=$prod->Description ?></p>
-                <?php if($prod->Configurable_on_Website__c){ ?>
+                <?php if($prod->WebConfigurable__c){ ?>
                 <a href="/products/configure?pid=<?= $prod->Id ?>" class="w3-button w3-red w3-text-black w3-hover-black w3-hover-text-red">Build It</a>
                 <?php } ?>
             </div>
