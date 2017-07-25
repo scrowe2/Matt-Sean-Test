@@ -32,7 +32,7 @@ class SFDCConnector {
         $this->soap = new SoapClient('lib/sfdc_enterprise_v40.wsdl', array('trace' => 1));
         $this->cpqSoap = new SoapClient('lib/SalesforceCPQAPI.wsdl', array('trace' => 1));
         $this->login();
-        var_dump($this->soap->__getLastResponse());
+        //var_dump($this->soap->__getLastResponse());
     }
     
     public function login(){
