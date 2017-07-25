@@ -32,17 +32,17 @@ define('DEFAULT_METHOD', 'Index');
  * 
  * SFDC Username for Integration
  */
-define('SFDC_API_USER', 'mseeger@mfg.qtc.demo');
+define('SFDC_API_USER', 'scrowe@ito.qtc.dev');
 
 /**
  * SFDC Password for Integration
  */
-define('SFDC_API_PASSWORD', 'G00dfellas!');
+define('SFDC_API_PASSWORD', 'Benchpre55!');
 
 /**
  * SFDC API Token for Integration
  */
-define('SFDC_API_TOKEN', 'bhdytbkDNlIU2BSKovvuuyuq7');
+define('SFDC_API_TOKEN', '');
 
 /**
  * SETTING THE LOCALE
