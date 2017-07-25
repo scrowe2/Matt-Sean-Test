@@ -23,7 +23,7 @@ class Bootstrap {
         // Set the _url property
         $this->_getURL();
         $this->_errors = array();
-        
+        var_dump($this);
         if(empty($this->_url[0])){
             $this->_loadDefaultController();
             return;
