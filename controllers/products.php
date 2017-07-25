@@ -16,15 +16,15 @@ class products extends Controller{
     }
     
     public function Index(){
-        try{
+        //try{
             $sfdc = new SFDCConnector();
-        }
-        catch(Exceptions $e){
-            var_dump($e);
-        }
-        //$products = $sfdc->query("SELECT Name, SBQQ__ProductPictureID__c, Id, ProductCode, Description, Image__c, WebConfigurable__c FROM Product2 WHERE AvailableOnWeb__c = TRUE AND Name != '' AND Description != '' AND ProductCode != '' ORDER BY WebConfigurable__c DESC, Name ASC LIMIT 30");
+        //}
+        //catch(Exceptions $e){
+        //    var_dump($e);
+        //}
+        $products = $sfdc->query("SELECT Name, SBQQ__ProductPictureID__c, Id, ProductCode, Description, Image__c, WebConfigurable__c FROM Product2 WHERE AvailableOnWeb__c = TRUE AND Name != '' AND Description != '' AND ProductCode != '' ORDER BY WebConfigurable__c DESC, Name ASC LIMIT 30");
         $this->view->renderHeader();
-       // $this->view->render("productListing", $products);
+        $this->view->render("productListing", $products);
         //var_dump($sfdc);
         $this->view->renderFooter();
     }
