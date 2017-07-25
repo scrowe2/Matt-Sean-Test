@@ -17,7 +17,7 @@
     <div class="w3-top">
       <div class="w3-bar w3-red w3-card-2 w3-left-align w3-large">
         <a class="w3-bar-item w3-button w3-hide-large w3-right w3-padding-large w3-hover-black w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-        <a href="/" class="w3-bar-item w3-padding-large w3-white" style="color: transparent !important; background-image: url(https://www.google.com/imgres?imgurl=http%3A%2F%2Fcdn-s3.allmusic.com%2Frelease-covers%2F500%2F0000%2F825%2F0000825367.jpg&imgrefurl=http%3A%2F%2Fwww.allmusic.com%2Fartist%2Faerosmith-mn0000604852&docid=8zpTdwQ2SKHt2M&tbnid=awzbU8xksK_NlM%3A&vet=10ahUKEwic5t2U7KTVAhWIqVQKHRvjDjwQMwj3ASgNMA0..i&w=500&h=500&bih=1678&biw=3200&q=aerosmith&ved=0ahUKEwic5t2U7KTVAhWIqVQKHRvjDjwQMwj3ASgNMA0&iact=mrc&uact=8); background-size: cover;">Home</a>
+        <a href="/" class="w3-bar-item w3-padding-large w3-white" style="color: transparent !important; background-image: url(http://cdn-s3.allmusic.com/release-covers/500/0000/825/0000825367.jpg); background-size: cover;">Home</a>
         <a href="/products" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-padding-large w3-hover-black">Products</a>
         <a href="#clients" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-padding-large w3-hover-black">Customers</a>
         <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-padding-large w3-hover-black">Team</a>
