@@ -14,7 +14,7 @@ foreach($context->result->records as $prod){
 ?>
     <tr class="w3-row w3-hide-small w3-hide-medium">
         <td class="w3-cell">
-            <img style="height: 80px; width: auto;" src="https://mfgqtc.my.salesforce.com/servlet/servlet.ImageServer?id=<?=$prod->SBQQ__ProductPictureID__c ?>&oid=00D460000000MPU" />
+            <img style="height: 80px; width: auto;" src="https://na59.salesforce.com/servlet/servlet.ImageServer?id=<?=$prod->SBQQ__ProductPictureID__c ?>&oid=015f4000000MM0X" />
         </td>
             
         <td class="w3-cell"><?=$prod->Name ?></td>
@@ -36,7 +36,7 @@ foreach($context->result->records as $prod){
             <div class="w3-container w3-center">
                 <h3><?=$prod->Name ?></h3>
                 <p><?=$prod->ProductCode ?></p>
-                <img style="height: 160px; width: auto;" src="https://mfgqtc.my.salesforce.com/servlet/servlet.ImageServer?id=<?=$prod->SBQQ__ProductPictureID__c ?>&oid=00D460000000MPU" />
+                <img style="height: 160px; width: auto;" src="https://na59.salesforce.com/servlet/servlet.ImageServer?id=<?=$prod->SBQQ__ProductPictureID__c ?>&oid=00D460000000MPU" />
                 <p><?=$prod->Description ?></p>
                 <?php if($prod->WebConfigurable__c){ ?>
                 <a href="/products/configure?pid=<?= $prod->Id ?>" class="w3-button w3-red w3-text-black w3-hover-black w3-hover-text-red">Build It</a>
