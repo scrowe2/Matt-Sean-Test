@@ -31,8 +31,8 @@ class SFDCConnector {
     public function __construct() {
         $this->soap = new SoapClient('lib/sfdc_enterprise_v40.wsdl', array('trace' => 1));
         $this->cpqSoap = new SoapClient('lib/SalesforceCPQAPI.wsdl', array('trace' => 1));
-        //$this->login();
-        echo "I am inside connector constructer";
+        $this->login();
+        var_dump($this);
     }
     
     public function login(){
