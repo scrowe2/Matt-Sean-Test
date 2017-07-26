@@ -24,7 +24,7 @@ class products extends Controller{
         //}
         $products = $sfdc->query("SELECT Name, SBQQ__ProductPictureID__c, Id, ProductCode, Description, WebConfigurable__c FROM Product2 WHERE AvailableOnWeb__c = TRUE AND Name != '' AND Description != '' AND ProductCode != '' ORDER BY WebConfigurable__c DESC, Name ASC LIMIT 30");
         $this->view->renderHeader();
-        var_dump($products);
+        //var_dump($products);
         $this->view->render("productListing", $products);
         //var_dump($sfdc);
         $this->view->renderFooter();
