@@ -1,7 +1,7 @@
 <!-- Header -->
 <header class="w3-container w3-red w3-text-black w3-center" style="padding:96px 16px">
   <h1 class="w3-jumbo"><?=CNAME?></h1>
-  <p class="w3-xlarge">Industrial Grade Equipment</p>
+  <p class="w3-xlarge"><?=CCAP?></p>
   <a href="/products" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">View Products</a>
 </header>
 
@@ -10,9 +10,9 @@
   <div class="w3-content">
     <div class="w3-twothird">
       <h1 id="services">Our Products</h1>
-      <h3>Heavy Equipment</h3>
+      <h3><?=CPROD?></h3>
       <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
-      <h3>Manufacturing</h3>
+      <h3>Support and Maintenance</h3>
       <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
         laboris nisi ut aliquip ex ea commodo consequat.</p>
