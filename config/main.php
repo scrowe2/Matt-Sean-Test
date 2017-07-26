@@ -72,3 +72,9 @@ define('SECO', '00FF00');
  * Set Company Name
  */
 define('CNAME', 'Sean Company');
+
+/**
+ * Set Company Caption
+ */
+define('CCAP', 'Commercial Power Equipment');
+
