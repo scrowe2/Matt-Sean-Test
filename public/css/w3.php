@@ -1,6 +1,6 @@
 <?php 
 header("Content-type: text/css"); 
-$prim=#00FF00;
+$prim='#00FF00';
 ?>
 html {
     box-sizing: border-box
