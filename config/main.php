@@ -68,4 +68,7 @@ define('PRIM', 'EA2D31');
  */
 define('SECO', '00FF00');
 
-
+/**
+ * Set Company Name
+ */
+define('CNAME', 'Sean Company');
