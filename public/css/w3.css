@@ -1439,7 +1439,7 @@ a {
 }
 .w3-border-red,
 .w3-hover-border-red:hover {
-    border-color: #FF8C00!important
+    border-color: #<?=PRIM?>!important
 }
 .w3-border-green,
 .w3-hover-border-green:hover {
