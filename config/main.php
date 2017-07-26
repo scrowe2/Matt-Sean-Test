@@ -78,3 +78,7 @@ define('CNAME', 'Sean Company');
  */
 define('CCAP', 'Commercial Power Equipment');
 
+/**
+ * Set Company Main Product
+ */
+define('CPROD', 'Generators');
