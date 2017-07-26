@@ -51,7 +51,10 @@ define('SFDC_API_TOKEN', '');
 setlocale(LC_MONETARY, 'en_US');
 
 
-
+/**
+ * Set Company Image URL
+ */
+define('IMGURL', 'https://i.kinja-img.com/gawker-media/image/upload/s--pEKSmwzm--/c_scale,fl_progressive,q_80,w_800/1414228815325188681.jpg');
 
 
 
