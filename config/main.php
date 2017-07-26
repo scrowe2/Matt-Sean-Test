@@ -58,4 +58,14 @@ define('IMGURL', 'https://i.kinja-img.com/gawker-media/image/upload/s--pEKSmwzm-
 
 
 
+/**
+ * Set Company primary color
+ */
+define('PRIM', '');
+
+/**
+ * Set Company primary color
+ */
+define('SECO', '');
+
 
