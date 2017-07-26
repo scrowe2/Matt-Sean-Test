@@ -61,7 +61,7 @@ define('IMGURL', 'https://i.kinja-img.com/gawker-media/image/upload/s--pEKSmwzm-
 /**
  * Set Company primary color
  */
-define('PRIM', '');
+define('PRIM', 'EA2D31');
 
 /**
  * Set Company primary color
