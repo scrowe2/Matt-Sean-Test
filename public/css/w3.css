@@ -1275,7 +1275,7 @@ a {
 .w3-red,
 .w3-hover-red:hover {
     color: #fff!important;
-    background-color: #FF8C00!important
+    background-color: #<?=PRIM?>!important
 }
 .w3-sand,
 .w3-hover-sand:hover {
@@ -1345,7 +1345,7 @@ a {
 }
 .w3-text-red,
 .w3-hover-text-red:hover {
-    color: #FF8C00!important
+    color: #<?=PRIM?>!important
 }
 .w3-text-green,
 .w3-hover-text-green:hover {
