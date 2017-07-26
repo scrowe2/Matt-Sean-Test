@@ -1,6 +1,6 @@
 <?php 
 header("Content-type: text/css"); 
-$pri=echo PRIM;
+$pri= constant(PRIM);
 ?>
 html {
     box-sizing: border-box
