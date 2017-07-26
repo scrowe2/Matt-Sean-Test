@@ -1279,7 +1279,7 @@ a {
 .w3-red,
 .w3-hover-red:hover {
     color: #fff!important;
-    background-color: <?=$pri?>!important
+    background-color: #<?=$pri?>!important
 }
 .w3-sand,
 .w3-hover-sand:hover {
@@ -1349,7 +1349,7 @@ a {
 }
 .w3-text-red,
 .w3-hover-text-red:hover {
-    color: <?=$pri?>!important
+    color: #<?=$pri?>!important
 }
 .w3-text-green,
 .w3-hover-text-green:hover {
@@ -1443,7 +1443,7 @@ a {
 }
 .w3-border-red,
 .w3-hover-border-red:hover {
-    border-color: <?=$pri?>!important
+    border-color: #<?=$pri?>!important
 }
 .w3-border-green,
 .w3-hover-border-green:hover {
