@@ -1,6 +1,6 @@
 <?php 
 header("Content-type: text/css"); 
-$pri= '#00ff00';
+$pri=$_GET['theme'];
 ?>
 html {
     box-sizing: border-box
