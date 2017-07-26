@@ -1,6 +1,6 @@
 <!-- Header -->
 <header class="w3-container w3-red w3-text-black w3-center" style="padding:96px 16px">
-  <h1 class="w3-jumbo">RHINO Manufacturing</h1>
+  <h1 class="w3-jumbo"><?=CNAME?></h1>
   <p class="w3-xlarge">Industrial Grade Equipment</p>
   <a href="/products" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">View Products</a>
 </header>
