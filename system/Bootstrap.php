@@ -32,7 +32,7 @@ class Bootstrap {
         // Load the called controler
         $this->_loadController();
         $this->_callControllerMethod();
-        var_dump($this);        
+             
     }
     
     private function _getURL(){
