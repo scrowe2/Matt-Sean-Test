@@ -22,6 +22,6 @@ spl_autoload_register('autoload');
 $app = new Bootstrap();
 
 
-var_dump($SERVER);
+var_dump($_SERVER);
 
 ?>
