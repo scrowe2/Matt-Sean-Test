@@ -26,9 +26,8 @@
       <h2 class="w3-center" id="get-quote">Need Help?</h2>
       <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
         <input type="hidden" name="oid" value="00D6A000000fSEl" />
-        <input type="hidden" name="retURL" value="http://qtclending.force.com/apex/Inquiry_Confirmation" />
+        <input type="hidden" name="retURL" value="/inquiry/thankYou" />
         <input type="hidden" name="lead_source" value="Web" />
-        <input type="hidden" id="00N6A000005fYKx" name="00N6A000005fYKx" value="1" />
         <table>
             <tr>
                 <td><label for="first_name">First Name</label></td>
