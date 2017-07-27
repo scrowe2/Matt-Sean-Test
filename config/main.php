@@ -45,6 +45,11 @@ define('SFDC_API_PASSWORD', 'Benchpre55!');
 define('SFDC_API_TOKEN', '');
 
 /**
+ * Sets Org ID
+ */
+define('ORG_ID', '00Df4000000mKmC');
+
+/**
  * SETTING THE LOCALE
  * @todo make this multi currency based on the Browser locale if needed
  */
