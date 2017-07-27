@@ -26,7 +26,7 @@
       <h2 class="w3-center" id="get-quote">Need Help?</h2>
       <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
         <input type="hidden" name="oid" value="<?=ORG_ID?>" />
-        <input type="hidden" name="retURL" value="/inquiry/thankYou" />
+        <input type="hidden" name="retURL" value="https://<?=$_SERVER["SERVER_NAME"]?>/inquiry/thankYou" />
         <input type="hidden" name="lead_source" value="Web" />
         <table>
             <tr>
