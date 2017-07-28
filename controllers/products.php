@@ -22,7 +22,7 @@ class products extends Controller{
         //catch(Exceptions $e){
         //    var_dump($e);
         //}
-        $products = $sfdc->query("SELECT Name, SBQQ__ProductPictureID__c, Id, ProductCode, Description, WebConfigurable__c FROM Product2 WHERE AvailableOnWeb__c = TRUE AND Name != '' AND Description != '' AND ProductCode != '' ORDER BY WebConfigurable__c DESC, Name ASC LIMIT 30");
+        $products = $sfdc->query("SELECT Name, Web_Image_URL__c, Id, ProductCode, Description, WebConfigurable__c FROM Product2 WHERE AvailableOnWeb__c = TRUE AND Name != '' AND Description != '' AND ProductCode != '' ORDER BY WebConfigurable__c DESC, Name ASC LIMIT 30");
         $this->view->renderHeader();
         //var_dump($products);
         $this->view->render("productListing", $products);
