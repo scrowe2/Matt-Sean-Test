@@ -36,7 +36,7 @@ foreach($context->result->records as $prod){
             <div class="w3-container w3-center">
                 <h3><?=$prod->Name ?></h3>
                 <p><?=$prod->ProductCode ?></p>
-                <img style="height: 160px; width: auto;" src="https://na59.salesforce.com/servlet/servlet.ImageServer?id=<?=$prod->SBQQ__ProductPictureID__c ?>&oid=00Df4000000mKmC" />
+                <img style="height: 160px; width: auto;" src="<?=$prod->Web_Image_URL__c?>" />
                 <p><?=$prod->Description ?></p>
                 <?php if($prod->WebConfigurable__c){ ?>
                 <a href="/products/configure?pid=<?= $prod->Id ?>" class="w3-button w3-red w3-text-black w3-hover-black w3-hover-text-red">Build It</a>
